@@ -1,0 +1,116 @@
+[
+    {
+        "id": 0,
+        "name": "Audi RS6 Avant",
+        "price": 11600000,
+        "img": "assets/img/projects/rs6avant.png"
+    },
+    {
+        "id": 1,
+        "name": "Audi RS7",
+        "price": 14000000,
+        "img": "assets/img/projects/rs7.png"
+    },
+    {
+        "id": 2,
+        "name": "Mercedes AMG GT",
+        "price": 26000000,
+        "img": "assets/img/projects/amggt.png"
+    },
+    {
+        "id": 3,
+        "name": "Porsche GT3 RS",
+        "price": 17700000,
+        "img": "assets/img/projects/gt3rs.png"
+    },
+    {
+        "id": 4,
+        "name": "Mercedes AMG G63",
+        "price": 18700000,
+        "img": "assets/img/projects/g63.png"
+    },
+    {
+        "id": 5,
+        "name": "BMw M3 Competition",
+        "price": 7950000,
+        "img": "assets/img/projects/m3.png"
+    },
+    {
+        "id": 6,
+        "name": "Porsche Macan GTS",
+        "price": 9700000,
+        "img":"assets/img/projects/macan.png"
+    },
+    {
+        "id": 7,
+        "name": "BMW X6M Competition",
+        "price": 11750000,
+        "img":"assets/img/projects/x6m.png"
+    },
+    {
+        "id": 8,
+        "name": "Porsche Panamera 4 Sport Turismo",
+        "price": 7090000,
+        "img":"assets/img/projects/panamera.png"
+    },
+    {
+        "id": 9,
+        "name": "Audi R8",
+        "price": 16600000,
+        "img":"assets/img/projects/r8.png"
+    },
+    {
+        "id": 10,
+        "name": "BMW M4 Competition",
+        "price": 6950000,
+        "img":"assets/img/projects/m4.png"
+    },
+    {
+        "id": 11,
+        "name": "Audi A3",
+        "price": 2299900,
+        "img":"assets/img/projects/a3.png"
+    },
+    {
+        "id": 12,
+        "name": "Porsche Cayman 718",
+        "price": 5350000,
+        "img":"assets/img/projects/cayman.png"
+    },
+    {
+        "id": 13,
+        "name": "BMW 320i",
+        "price": 3200000,
+        "img":"assets/img/projects/320i.png"
+    },
+    {
+        "id": 14,
+        "name": "Mercedes A35 AMG",
+        "price": 4500000,
+        "img":"assets/img/projects/a45.png"
+    },
+    {
+        "id": 15,
+        "name": "Porsche Cayenne Turbo",
+        "price": 1390000.0,
+        "img":"assets/img/projects/cayenne.png"
+    },
+    {
+        "id": 16,
+        "name": "Audi A1",
+        "price": 135000.0,
+        "img":"assets/img/projects/a1.png"
+    },
+    {
+        "id": 17,
+        "name": "BMW X2",
+        "price": 8307.31,
+        "img":"assets/img/projects/x2.png"
+    },
+    {
+        "id": 18,
+        "name": "BMW M2",
+        "price": 330000.0,
+        "img":"assets/img/projects/m2.png"
+    }
+]

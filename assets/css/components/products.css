@@ -1,0 +1,97 @@
+/* PAGINA DE PRODUTOS, MAIS O CSS INDEX ESTA ITEGRADO NELA  */
+.banner-produtos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-produtos figure {
+    width: 84%;
+    height: 80%;
+    /* margin-top: 30px; */
+    background-image: url(/assets/img/backgrounds/Layout.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.473);
+    transition: 0.5s;
+}
+
+.banner-produtos figure:hover {
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.555);
+}
+
+.login-sign-in>input {
+    color: var(--background-color);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    margin-top: 20px;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 460px) {
+    /******* MENU ******/
+
+    .menu div h1 {
+        font-size: 1.5rem;
+    }
+
+    /******* BANNER INITIAL ******/
+
+    .search-banner h4,
+    .search-banner div {
+        margin-left: -34px;
+    }
+
+    .search-banner h4 {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .search-banner div input {
+        width: 90%;
+    }
+
+    .frete p {
+        font-size: 1rem;
+    }
+
+    /******* CATEGORIAS ******/
+    .scrolling-wrapper {
+        left: 18px;
+    }
+
+    /******* PAYMENTS ******/
+
+    .payments div {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .payments div ul {
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .payments div ul li {
+        padding: 0px;
+        margin: 0px;
+        width: fit-content;
+    }
+
+    .payments div ul li section p {
+        display: none;
+    }
+}

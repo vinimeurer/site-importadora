@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!------ LINK CSS STYLE ------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------ FAVICON ------->
+  <link rel="shortcut icon" href="assets/img/favicon/830da1b9d031a459d1fc38de3c90197c_tn-removebg-preview.png"
+    type="image/x-icon">
+  <!------ LINK FONTAWESOME ------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----- LINK SLICK JS ------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <!--icon Dark-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
+  <!----- SCRIPT - FEATHERICONS ----- -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  <script src="assets/js/index.js" defer></script>
+
+  <title>German Imports - Catálogo</title>
+
+</head>
+
+<body>
+
+  <!------ MENU ------>
+  <header id="header" class="container header">
+    <nav class="menu nav">
+      <div class="divDaLogo">
+        <h2>German Imports</h2>
+      </div>
+
+      <!-- MENU RESPONSIVO DENTRO DO HAMBURGUE -->
+      <ul class='list menuMobile' id="menuMobile" role="menuMobile">
+        <li id="active-link-menu"><a href="/index.html">Home</a></li>
+        <li><a href="/produtos.html">Catálogo</a></li>
+        <li><a href="/sobre.html">Sobre nós</a></li>
+      </ul>
+
+      <!-- SISTEMA DE CARRINHO, USUARIO , E CONFIG DENTRO DA TAG NAV -->
+      <div class="configs-menu">
+        <!---- SCROLL ABRE FECHA CARRINHO ---->
+        <div class="config">
+          <a>
+            <i class="fas fa-shopping-bag" id="cart-btn"></i>
+            <!-- Total de itens na sacolinha do carrinho -->
+            <p id="cont-itens-carrinho" class="sacolinhaDark"></p>
+          </a>
+        </div>
+
+        <!--ABERTURA DA DIV SISTEMA DE CARRINHO -->
+        <div class="cardCarrinho-container" id="meuCarrinho">
+
+          <section class="box-cart">
+
+            <section class="description">
+
+              <div class="produtos" style="width: 45%;">
+                <p>Produtos</p>
+              </div>
+
+              <div style="width: 30%;">
+                <p>Quantidade</p>
+              </div>
+
+              <div style="width: 20%;">
+                <p>Preço</p>
+              </div>
+
+            </section>
+            <!-- Abertura da div cart-item -->
+            <div class="cart-item">
+
+              <!-- Fechamento da div cart-item -->
+            </div>
+
+            <span id="totalFinal" class="total">
+              <h2> Nenhum item escolhido </h2>
+            </span>
+
+            <button id="btnFinalizarCarrinho">
+              <h2>Comprar</h2>
+            </button>
+
+          </section>
+        </div>
+
+        <!-- Email do usuario CONFIG -->
+        <span id="user-email"></span>
+
+        <!---- OPEN CONFIG ---->
+
+        <div style="width: 18%;" class="config">
+          <button type="button" onclick="Mudarestado('openConfig')">
+            <a><i class="fas fa-cog"></i></a>
+          </button>
+        </div>
+
+        <!--Abertura da Div openConfig-->
+        <div id="openConfig" class="btn-config">
+
+          <ul id="ul-OpenConfig">
+
+            <li>
+              <p>Minha Conta</p>
+            </li>
+
+            <li>
+              <p>Pagamentos</p>
+            </li>
+
+            <li>
+              <p>Direitos</p>
+            </li>
+
+            <!-- Config Tema Dark & Light -->
+            <!--Abertura da Div ul-OpenConfig-->
+            <div class="ul-OpenConfig">
+              <input type="checkbox" name="chenge-theme" id="chenge-theme" />
+              <label for="chenge-theme">
+
+                <li id="btn-theme">
+
+                  <p>Tema</p>
+
+                  <i class="bi bi-sun">
+                    <p>Light</p>
+                  </i>
+
+                  <i class="bi bi-moon">
+                    <p>Dark</p>
+                  </i>
+
+                </li>
+
+              </label>
+
+              <!--Fechamento da Div ul-OpenConfig-->
+            </div>
+
+            <li>
+              <p>Feedbacks</p>
+            </li>
+
+            <span id='li-sair'></span>
+          </ul>
+
+          <!--Fechamento da Div openConfig-->
+        </div>
+
+        <!--ABERTURA DA DIV SISTEMA DE CARRINHO -->
+      </div>
+
+      <!-- SISTEMA DE MENU RESPONSIVEL -->
+      <div class="divMenuMobile">
+        <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"
+          style="color: var(--important-color)">Menu<span class="hamburger"></span>
+        </button>
+      </div>
+
+    </nav>
+
+  </header>
+
+<br>
+<br>
+<br>
+
+  <!---------- CATEGORIAS ---------->
+  <section class="categories">
+    <div class="titles-page">
+      <h5>INTRODUCAO</h5>
+    </div>
+    <div class="scrolling-wrapper">
+        <p>Bem-vindo ao mundo da exclusividade automotiva! Se você é um entusiasta apaixonado por carros de luxo e performance, chegou ao lugar certo. Nosso site é o portal para uma experiência única no universo automobilístico, onde a elegância se encontra com a potência e a sofisticação se traduz em quilômetros de pura emoção.</p>
+        <p>Somos uma importadora especializada nas marcas mais renomadas do segmento: Audi, Porsche, BMW e Mercedes-Benz. Aqui, o seu desejo de dirigir os veículos mais cobiçados do planeta torna-se uma realidade acessível. Navegue pelas linhas exclusivas dessas montadoras icônicas e descubra uma seleção cuidadosamente curada de modelos que combinam inovação, design de vanguarda e desempenho excepcional.</p>
+        <p>Nosso compromisso é fornecer acesso a automóveis excepcionais que representam o ápice da engenharia alemã, com um toque de luxo e estilo incomparáveis. Explore nosso catálogo, mergulhe nas especificações técnicas e deixe-se envolver pela elegância intemporal e pelas tecnologias de ponta que cada um de nossos veículos oferece.</p>
+        <p>Além disso, nossa equipe apaixonada e especializada está à disposição para atender às suas perguntas, fornecer informações detalhadas e ajudá-lo a encontrar o carro dos seus sonhos. Não importa se você busca um sedã luxuoso, um esportivo de alta performance ou um SUV elegante - estamos aqui para tornar sua jornada automotiva memorável.</p>  
+        <p>Sinta-se à vontade para explorar nosso site e descobrir o que torna a nossa importadora a escolha definitiva para aqueles que buscam o melhor em termos de automóveis de prestígio. Seja bem-vindo à nossa comunidade de apaixonados por carros e prepare-se para experimentar uma condução que transcende o comum.</p>
+    </div>
+
+  </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+  <!-------------- FOOTER ---------------->
+  <footer>
+    <div class="menu-footer">
+      <div class="media">
+        <div class="media-title">
+          <a href="">
+            <h2>German Imports</h2>
+          </a>
+        </div>
+
+        <div class="social-media">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="shop">
+        <h3>Site</h3>
+        <ul>
+          <li><a href="index.html">Página incial</a></li>
+          <li><a href="produtos.html">Catálogo</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+      </div>
+
+      <div class="links">
+        <h3>Marcas parceiras</h3>
+        <ul>
+          <li><a href="https://configurator.audi.com/acc/configurator/v1/nzl/eng">Audi</a></li>
+          <li><a href="https://www.bmwusa.com/build-your-own.html#/series">BMW</a></li>
+          <li><a href="https://www.mbusa.com/en/vehicles/build">Mercedes</a></li>
+          <li><a href="https://www.porsche.com/international/modelstart/all/">Porsche</a></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="tel:+551234567890">4002-8922</a></li>
+          <li><a href="ecommerce@gmail.com">germanimports@gi.com</a></li>
+          <li><a href="#">Curitiba - PR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>© 2023 German Imports Importadora Ltda. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-------------- SCRIPT SLICK JS ------------------>
+  <script src="assets/js/scriptCarrinho.js"></script>
+  <script src="assets/js/menuMobile.js"></script>
+
+  <!-- SWEETALERT PERSONALIZADO -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!------ SCRIPT INDEX JS ------->
+</body>
+
+</html>
